@@ -1,0 +1,475 @@
+body{
+    /*font-size: 11px;*/
+    padding: 0;
+    margin: 0;
+    background-color: #F7DEDE;
+    font-family: monospace;
+    font: 70.5% "Trebuchet MS", sans-serif;
+    overflow:hidden;
+}
+
+#main-table-wrapper{
+    width: 100%;
+}
+#content-title{
+    padding: 5px;
+    background-color: #F7DEDE;
+    margin-bottom: -3px;
+}
+
+/*menu izquierda con las opciones disponibles*/
+#left-menu{
+    padding: 5px;
+    /*background-color: #AA8D8D;*/
+    background-color: #FAF5F5;
+    height: 90vh;
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+}
+
+#left-menu-title{
+    padding-bottom: 10px;
+}
+
+#right-workspace{
+    /*margin-top: -2px;	*/
+    height: 73vh;	
+    /*background-color: #C9B5B5;*/
+    /*background-color: #eeeeee;*/
+    background-color: white;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    overflow-y: hidden;    
+}
+
+#right-workspace-footer-history{
+    height: 17.3vh;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 4px;
+}
+
+#tabs-1{
+    height: 75vh;
+    overflow-y: auto;
+    margin-bottom:10vh; 
+}
+
+.menu-entry{
+    background-color: #F7DEDE;
+    border-radius: 2px;
+    list-style: none;
+    padding-left: 7px;
+}
+
+#header-menu-entry-edition{
+    margin-bottom: 10px;
+    color: #ff0084;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#header-create-table{
+    margin-bottom: 10px;
+    color: #ff0084;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#menu-entry-edition{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#menu-entry-edition-content{
+    padding: 5px;
+}
+
+#menu-entry-edition-id{
+    padding: 1px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+#menu-entry-edition-cssClass{
+    padding: 1px;
+    font-size:12px;
+    vertical-align: middle;
+}
+
+#tabs-1 .stdTable td:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#tabs-1 .stdTableTrBorder td:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#tabs-1 .stdTableTdBorder td:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#label-menu-ops-table{
+    color: #ff0084;
+
+}
+
+#label-menu-ops-section{
+    margin-top: 10px;
+}
+
+#section-demo-f{
+    margin-top:13px;
+}
+
+.tdSelected{
+    background-color: #dddddd;
+}
+
+.styled-content{
+    color:#0073ea;
+    font-weight: bold;
+}
+.styled-content-red{
+    color:#ff0084;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.styled-content-red-nopadding{
+    color:#ff0084;
+    font-weight: bold;
+    /*padding: 8px;*/
+}
+
+.hr-styled-red{
+    border: none;
+    height: 1px;
+    color: #ff0084;
+    background-color: #ff0084;
+}
+
+.select-table-size{
+    vertical-align: middle;
+    padding: 1px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#debug-zone-textarea{
+    font-size: 7px;
+}
+
+input[type=button]{
+    font-size: 11px;	
+}
+
+#right-workspace-code-textarea{
+    margin-left: 2px;
+}
+
+#dialog-spring{
+    display:none;
+}
+
+#history-content{
+    font-family: monospace;
+    height: 13vh;
+    overflow-y: auto;
+    font-size: 11px;
+}
+
+#history-hr{
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.history-entry-html-mod{
+    color: #0073ea;
+    border-bottom: 1px dotted #0073ea;
+    cursor: pointer;
+}
+
+.history-entry-msg-shower{
+    color: #000000;
+    border-bottom: 1px dotted #0073ea;
+}
+
+.history-entry-selected{
+    /*background-color: rgba(329,100,100,0.3);*/
+    background-color: #91bde0;
+    color:black;
+}
+
+#preview-html-select{
+    overflow-y:auto;
+    height: 250px;
+    margin-top: 5px;
+    width: 98.5%;
+    border: 1px solid #dddddd;
+    border-bottom-left-radius: 2px; 
+    border-bottom-right-radius: 2px;
+    /*border-top-width: 0px;*/
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#preview-html-select-header{
+    width: 100%;
+    border: 1px solid #dddddd;
+    /*url("C/Users/Víctor/Documents/NetBeansProjects/foMaker/public_html/script/lib/style/images")*/
+    background: #dddddd 50% 50% repeat-x;
+    color: #ff0084;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 1px;
+}
+
+#preview-html-select-content{
+    font-size: 11px;
+}
+
+#td-content-container-html{
+    resize: none;
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    background-color: #FAF5F5;
+}
+
+#td-content-container-html:active{
+    border-color: #5295CC;
+}
+
+#footer-td-content-html{
+    margin-top: 7px;
+}
+
+.tabs-dialog-html-select-upper-selector{
+    height: 90px;
+    font-size: 11px;
+}
+
+.main-tab-wrapper{
+    height: 450px;
+}
+
+/*
+color: #7F7F7F
+azul: #365F91
+fondo del menu: #BEBEBE
+border: 1px solid #7F7F7F 
+
+colores crd:
+
+#FAF5F5
+#5295CC
+*/
+
+.spring-wrapper{
+    padding: 3px;
+    width: 100px;
+    background-color: #91bde0;
+    border: 1px solid #36af2d;
+    border-radius: 3px;
+}
+
+
+#content-title{
+    background-color: #FAF5F5;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+#main-body-footer{
+    background-color: #FAF5F5;
+    text-align:center;
+    border: 1px solid #dddddd;
+}
+
+.input-text-menu{
+    /*font-size: 10px;*/
+}
+
+#label-menu-style{
+    color: #ff0084;
+    margin-top:10px;
+}
+
+#label-menu-props{
+    color: #ff0084;
+    font-weight: bold;
+}
+
+#col-edition-section{
+    margin-right:7px;
+}
+
+#label-menu-ops{
+    color: #ff0084;
+    font-weight: bold;
+}
+
+#section-work-table{
+    margin-top : 7px;
+}
+
+#menu-entry-edition-content-addContent{
+    margin-top:8px;
+}
+
+/*
+ --------
+|        |
+|        |
+ --------
+*/
+
+.demo-f-1{
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border : 1px solid #0073ea;
+    border-collapse: collapse;
+}
+.demo-f-1 td{
+    border-collapse: collapse;
+    padding: 9px;
+
+}
+
+.demo-f-1-tr{
+
+}
+
+.demo-f-1:hover{
+    background-color: #91bde0;
+    cursor:pointer;
+}
+
+/*
+ --------
+|        |
+ --------
+|        |
+ --------
+*/
+
+.demo-f-2{
+    margin-top: -41px;
+    margin-left: 47px;
+    position: absolute;
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border : 1px solid #0073ea;
+    border-collapse: collapse;
+}
+.demo-f-2 td{
+
+}
+
+.demo-f-2-tr{
+    border:1px solid #0073ea;
+}
+
+.demo-f-2:hover{
+    background-color: #91bde0;
+    cursor:pointer;
+}
+
+/*
+ -------
+|   |   |
+ -------
+|   |   |
+ -------
+*/
+
+.demo-f-3{
+    margin-top: -41px;
+    margin-left: 94px;
+    position: absolute;
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border : 1px solid #0073ea;
+    border-collapse: collapse;
+}
+.demo-f-3 td{
+    border-collapse: collapse;
+    padding: 9px;
+    border: 1px solid #0073ea;
+}
+
+.demo-f-3-tr{
+    border:1px solid #0073ea;
+}
+
+.demo-f-3:hover{
+    background-color: #91bde0;
+    cursor:pointer;
+}
+
+.demo-f-selected{
+    background-color: #91bde0;
+}
+
+.copyIndicator{
+    /*border: 1px dashed #ff0084;*/
+    background-color: #91bde0;
+    font-weight: bold;
+}
+
+.cutIndicator{
+    background-color: #F7DEDE;
+    font-weight: bold;
+}
+
+#right-workspace-footer-header-history{
+    cursor:pointer;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: 1em
+}
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+    background: #C0C0C0;
+}
+::-webkit-scrollbar-thumb {
+    background: #91bde0;
+}
+
+.fo-obj-tab-wrapper{
+    height: 50vh;
+}
+
+/*PREDEF OBJ*/
+
+.predef-red-styled-label{
+    color: #ff0084;
+    font-weight: bold;
+}
+
+.predef-blue-styled-label{
+    color: #0073ea;
+    font-weight: bold;
+}
+
+.predef-input-text{
+    vertical-align: middle;
+    padding: 1px;
+    font-size: 12px;
+}
+
+.tabs-spring-sel{
+    height : 30vh;
+    overflow-y: auto;
+}

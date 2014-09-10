@@ -1,0 +1,66 @@
+#tabs-1 > table{
+    margin-top: 5px;
+}
+
+/*TABLA LIMPIA*/
+.stdTable{
+    border-collapse: collapse;
+    border: 1px solid #7F7F7F;	
+    padding: 5px;
+}
+
+.stdTable td{
+    padding: 5px;
+
+}
+.stdTable tr{
+
+}
+
+/*TABLA CON SEPARADOR HORIZONTAL*/
+.stdTableTdBorder{
+    border-collapse: collapse;
+    border: 1px solid #7F7F7F;	
+    padding: 5px;
+}
+
+.stdTableTdBorder td{
+    padding: 5px;
+    border:1px solid #7F7F7F;
+}
+
+/*TABLA CON SEPARADOR HORIZONTAL Y VERTICAL*/
+.stdTableTrBorder{
+    border-collapse: collapse;
+    border: 1px solid #7F7F7F;	
+    padding: 5px;
+}
+
+.stdTableTrBorder td{
+    padding: 5px;
+}
+
+.stdTableTrBorder tr{
+    border:1px solid #7F7F7F;
+}
+
+/*fila superior que marca el tamaño global de la tabla*/
+.td-percent{
+    /*display:none;*/
+}
+
+/*formatos de imagenes*/
+.littleImg{
+    height: 13px;
+    width:  13px;
+}
+
+.mediumImg{
+    height: 26px;
+    width:  26px;	
+}
+
+.bigImg{
+    height: 40px;
+    width:  40px;
+}

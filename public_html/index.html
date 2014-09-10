@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FO Maker</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+        <link rel=stylesheet href='style/style.css' type='text/css'> 
+        <link rel=stylesheet href='style/formStyle.css' type='text/css'> 
+        <link rel=stylesheet href='script/lib/style/jquery-ui.css' type='text/css'> 
+        <link rel=stylesheet href='script/lib/style/jquery-ui.theme.css' type='text/css'> 
+    </head>
+
+    <body>	
+        <!-- 3rd party lib -->
+        <script type='text/javascript' src='script/lib/jquery-2.1.0.min.js'></script>
+        <script type='text/javascript' src='script/lib/jquery-ui.js'></script>
+
+        <!-- Own scripts -->
+        <!-- Globals -->
+        <script type='text/javascript' src='script/utils/print.js'></script>
+        <script type='text/javascript' src='script/utils/global.js'></script>
+        <script type='text/javascript' src='script/domElementsManager/Create.js'></script>
+        <script type='text/javascript' src='script/domElementsManager/Bind.js'></script>	
+
+        <script type='text/javascript' src='script/History/Create.js'></script>
+        <script type='text/javascript' src='script/Spring/Manager.js'></script>
+
+        <script type='text/javascript' src='script/app/launcher.js'></script>
+        <script type='text/javascript' src='script/app/init.js'></script>
+
+
+        <section id='content'>		
+            <header id='content-title'>
+                HEADER
+            </header>
+            <section id='workspace-zone'>		
+                <table id='main-table-wrapper' >
+                    <tr>
+                        <td width='20%'></td>
+                        <td width='80%'></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section id='left-menu'>
+<!--                                <header id='left-menu-title'>
+
+                                </header>-->
+                                <section id='left-menu-options'>
+                                    <!-- <span class='spring-wrapper spring-input-text'>
+                                            text
+                                            <input path="name" />
+                                    </span> -->
+                                </section>
+                                <article id='debug-zone'>
+                                    <!-- <textarea id='debug-zone-textarea' rows='10' cols='55'>
+                                            
+                                    </textarea> -->
+                                </article>
+                            </section>
+                        </td>
+                        <td>
+                            <section id='right-workspace'>
+                                <header id='right-workspace-title'>
+
+                                </header>
+                                <div id='tabs'>
+                                    <ul>
+                                        <li><a href='#tabs-1'>Diseño</a></li>
+                                        <li><a href='#tabs-2'>Código</a></li>									
+                                    </ul>
+                                    <div id='tabs-1'>
+                                        <section id='right-workspace-design'>
+                                        </section>	
+                                    </div>
+                                    <div id='tabs-2'>
+                                        <section id='right-workspace-code'>
+                                            <!-- <textarea id='right-workspace-code-textarea' rows='30' cols='100'></textarea> -->
+                                        </section>	
+                                    </div>								
+                                </div>
+                                <!-- ui-dialog -->
+                                <div id='dialog-editor' title='Editar celda'>
+                                    <!-- Zona de edición -->
+                                    <div id='tabs-dialog-editor'>
+                                        <ul>
+                                            <li><a href='#tabs-11'>Añadir Objetos <label style='color:green'>Spring</label></a></li>									
+                                            <li><a href='#tabs-22'>Añadir Objetos HTML</a></li>
+                                            <li><a href='#tabs-33'>Editar HTML</a></li>
+                                        </ul>
+                                        <!-- Anadir Objetos Spring -->
+                                        <div id='tabs-11' class='main-tab-wrapper'>
+                                            <div id ='tabs-dialog-spring-select'>
+                                                <ul>
+<!--                                                    <li>
+                                                        <a href='#tabs-button'>
+                                                            button
+                                                        </a>
+                                                    </li>-->
+                                                     <li>
+                                                        <a href='#tabs-input'>
+                                                            input
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-checkbox'>
+                                                            checkbox                                                            
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-checkboxes'>
+                                                            checkboxes
+                                                        </a>
+                                                    </li>
+<!--                                                    <li>
+                                                        <a href='#tabs-errors'>
+                                                            errors
+                                                        </a>
+                                                    </li>-->
+<!--                                                    <li>
+                                                        <a href='#tabs-form'>
+                                                            form
+                                                        </a>
+                                                    </li>-->
+                                                    <li>
+                                                        <a href='#tabs-hidden'>
+                                                            hidden
+                                                        </a>
+                                                    </li>                                                   
+                                                    <li>
+                                                        <a href='#tabs-label'>
+                                                            label
+                                                        </a>
+                                                    </li>
+<!--                                                    <li>
+                                                        <a href='#tabs-option'>
+                                                            option
+                                                        </a>
+                                                    </li>-->
+<!--                                                    <li>
+                                                        <a href='#tabs-options'>
+                                                            options
+                                                        </a>
+                                                    </li>-->
+<!--                                                    <li>
+                                                        <a href='#tabs-password'>
+                                                            password
+                                                        </a>
+                                                    </li>-->
+                                                    <li>
+                                                        <a href='#tabs-radiobutton'>
+                                                            radiobutton
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-radiobuttons'>
+                                                            radiobuttons
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-select'>
+                                                            select
+                                                        </a>
+                                                    </li>
+<!--                                                    <li>
+                                                        <a href='#tabs-textarea'>
+                                                            textarea
+                                                        </a>
+                                                    </li>-->
+                                                </ul>
+<!--                                                <div id='tabs-button' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+                                                <div id ='tabs-input' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id='tabs-checkbox' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id='tabs-checkboxes' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+<!--                                                <div id ='tabs-errors' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+<!--                                                <div id ='tabs-form' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+                                                <div id ='tabs-hidden' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id ='tabs-label' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+<!--                                                <div id ='tabs-option' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id ='tabs-options' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+<!--                                                <div id ='tabs-password' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+                                                <div id ='tabs-radiobutton' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id ='tabs-radiobuttons' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+                                                <div id ='tabs-select' class='tabs-spring-sel'>
+                                                    
+                                                </div>
+<!--                                                <div id ='tabs-textarea' class='tabs-spring-sel'>
+                                                    
+                                                </div>-->
+                                            </div>							
+                                        </div>
+                                        <!-- Anadir Objetos HTML -->
+                                        <div id='tabs-22' class='main-tab-wrapper'>
+                                            <div id='tabs-dialog-html-select'>
+                                                <ul>
+                                                    <li>
+                                                        <a href='#tabs-5'>Tabla</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-6'>Imagen</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href='#tabs-7'>Enlace</a>
+                                                    </li>									
+                                                </ul>
+                                                <!-- Tabla -->
+                                                <div id='tabs-5' class='tabs-dialog-html-select-upper-selector'>
+                                                    <table width='100%'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width='25%'></td>
+                                                                <td width='25%'></td>
+                                                                <td width='25%'></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label class='styled-content'>Filas</label></td>
+                                                                <td colspan='2'><input id='html-select-table-row' type='text' class='select-table-size' size='2' value='1'></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label class='styled-content'>Columnas</label></td>
+                                                                <td colspan='2'><input id='html-select-table-cols' type='text' class='select-table-size' size='2' value='1'></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan='3'>
+                                                                    <input type='button' value='Insertar' id='tabs-dialog-html-select-insert-new-table'>
+                                                                </td>														
+                                                            </tr>
+                                                        <tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Imagen -->
+                                                <div id='tabs-6' class='tabs-dialog-html-select-upper-selector'>
+                                                    <table width='100%'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="33%"></td>
+                                                                <td width="33%"></td>
+                                                                <td width="33%"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <label class='styled-content'>Enlace</label>
+                                                                </td>
+                                                                <td><input type='text' size='30' id='html-obj-image-src'></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label class='styled-content'>Descripción</label></td>
+                                                                <td><input type='text' size='30' id='html-obj-image-desc'></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan='3'>
+                                                                    <input type='button' value='Insertar' id='tabs-dialog-html-select-insert-new-image'>
+                                                                </td>
+                                                            </tr>
+                                                        <tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Enlace -->
+                                                <div id='tabs-7' class='tabs-dialog-html-select-upper-selector'>
+                                                    <table width='100%'>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="33%"></td>
+                                                                <td width="33%"></td>
+                                                                <td width="33%"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <label class='styled-content'>Enlace</label>
+                                                                </td>
+                                                                <td><input type='text' size='30' id='html-obj-a-src'></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label class='styled-content'>Descripción</label></td>
+                                                                <td><input type='text' size='30' id='html-obj-a-desc'></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan='3'>
+                                                                    <input type='button' value='Insertar' id='tabs-dialog-html-select-insert-new-a'>
+                                                                </td>
+                                                            </tr>
+                                                        <tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <aside id='preview-html-select'>
+                                                <header  id='preview-html-select-header' class='styled-content-red-nopadding'>Previsualización</header>
+                                                <section id='preview-html-select-content'></section>
+                                            </aside>							
+                                            <footer>
+                                                <input type='button' id='save-html-select-content-container-html' value='Guardar'>
+                                                <input type='button' id='saveAndClose-html-select-content-container-html' value='Guardar y cerrar'>
+                                                <input type='button' id='delete-html-select-content-container-html' value='Borrar'>
+                                                <input type='button' id='close-html-select-content-container-html' value='Cerrar'>
+                                            </footer>					
+                                        </div>		
+                                        <!-- Editar HTML -->						
+                                        <div id='tabs-33' class='main-tab-wrapper'>
+                                            <textarea id='td-content-container-html' rows='27' cols='115'>
+											
+                                            </textarea>
+                                            <footer id='footer-td-content-html'>
+                                                <input type='button' id='save-td-content-container-html' value='Guardar'>
+                                                <input type='button' id='saveAndClose-td-content-container-html' value='Guardar y cerrar'>
+                                                <input type='button' id='delete-td-content-container-html' value='Borrar'>
+                                                <input type='button' id='close-td-content-container-html' value='Cerrar'>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <label class='styled-content'></label>
+                                    <section id='td-content-container'>
+
+                                    </section>																
+                                </div>
+                            </section>
+                            <section id='right-workspace-footer-history'>
+                                <header id='right-workspace-footer-header-history'>
+                                    <label class='styled-content-red-nopadding'>Historial</label>
+                                    <hr class='hr-styled-red' id='history-hr'>
+                                </header>
+                                <section id='history-content'>
+
+                                </section>                                
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2'>
+                            <footer id='main-body-footer'> - FO Maker - </footer>                            
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </body>
+</html>
