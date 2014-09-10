@@ -28,7 +28,7 @@ formMaker.spring.Manager = function()
 
 formMaker.spring.Manager.prototype.modifyToView = function()
 {
-
+    this.modifyier = "";
 };
 
 formMaker.spring.Manager.prototype.addToDomTabs = function()
